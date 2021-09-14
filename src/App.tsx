@@ -14,8 +14,9 @@ function App() {
         <div>
           <h1 className="text-center text-3xl font-bold">Hi, I am Arthur.</h1>
           <h2 className="text-center text-2xl">
-            I am a Software developer working in Singapore. I am interested in
-            tech and music.
+            Software developer working in Singapore focusing on web user
+            interface and experience. I am currently working at Rakuten
+            Singapore. I love music, reading and ideas
           </h2>
         </div>
         <div className="text-center">
