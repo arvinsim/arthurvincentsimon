@@ -4,7 +4,7 @@ import ProfilePicture from "./profile-picture.jpeg";
 function App() {
   return (
     <div>
-      <div className="flex flex-col space-y-12 container mx-sm pt-12 m-auto">
+      <div className="flex flex-col space-y-12 container mx-sm pt-12 m-auto max-w-prose">
         <img
           src={ProfilePicture}
           className="block object-contain rounded-full m-auto"
@@ -20,10 +20,18 @@ function App() {
           </h2>
         </div>
         <div className="text-center">
-          <div>LinkedIn</div>
-          <div>SoundCloud</div>
-          <div>Code Sandbox</div>
-          <div>Mini Projects</div>
+          <div>
+            <a
+              href={
+                "https://www.linkedin.com/in/arthur-vincent-simon-b1307b40/"
+              }
+            >
+              LinkedIn
+            </a>
+          </div>
+          {/*<div>SoundCloud</div>*/}
+          {/*<div>Code Sandbox</div>*/}
+          {/*<div>Mini Projects</div>*/}
         </div>
       </div>
     </div>
