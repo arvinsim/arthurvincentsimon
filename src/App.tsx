@@ -20,45 +20,45 @@ function App() {
             Music enthusiast. Exercises for health.
           </h2>
         </div>
-        <div className="text-center underline">
-          <div className={"my-4"}>
-            <a
-              href={
-                "https://www.linkedin.com/in/arthur-vincent-simon-b1307b40/"
-              }
-            >
-              LinkedIn
-            </a>
-          </div>
-          <div className={"my-4"}>
-            <a
-                href={"https://github.com/arvinsim"}
-            >
-              Github
-            </a>
-          </div>
-          <div className={"my-4"}>
-            <a
-                href={
-                  "https://stackoverflow.com/users/469921/developarvin?tab=profile"
-                }
-            >
-              Stack Overflow
-            </a>
-          </div>
-          <div className={"my-4"}>
-            <a
-                href={
-                  "https://dev.to/developarvin"
-                }
-            >
-              Dev.to
-            </a>
-          </div>
+        <div className="text-center text-2xl">Projects</div>
+        <div className="grid grid-cols-4 gap-4 underline text-center">
+          {projects.map(project => {
+            return <div>
+              <a
+                href={project.link}
+              >
+                {project.name}
+              </a>
+            </div>
+          })}
+        </div>
+        <div className="text-center text-2xl">Social Media</div>
+        <div className="grid grid-cols-4 gap-4 underline text-center">
+          {socialMedia.map(socialMedia => {
+            return <div className={"my-4"}>
+              <a
+                href={socialMedia.link}
+              >
+                {socialMedia.name}
+              </a>
+            </div>
+          })}
         </div>
       </div>
     </div>
   );
 }
+
+const projects = [
+  { name: "Chord Tools", link: "https://chord-tools.netlify.app" },
+]
+
+const socialMedia = [
+  { name: "LinkdIn", link: "https://www.linkedin.com/in/arthur-vincent-simon-b1307b40/" },
+  { name: "Github", link: "https://github.com/arvinsim" },
+  { name: "Stack Overflow", link: "https://stackoverflow.com/users/469921/developarvin?tab=profile" },
+  { name: "Dev.to", link: "https://dev.to/developarvin" }
+]
+
 
 export default App;
